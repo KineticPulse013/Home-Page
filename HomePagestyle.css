@@ -6,7 +6,6 @@ body {
   
 }
 
-/* Barre de navigation */
 header {
   display: flex;
   justify-content: space-between;
@@ -25,21 +24,21 @@ header {
 }
 
 .logoProduit {
-  display: flex;              /* pour centrer facilement */
-  justify-content: center;    /* centre horizontalement */
-  margin-top: 20px;           /* espace entre le texte et le logo */
+  display: flex;              
+  justify-content: center;    
+  margin-top: 20px;           
 }
 
 
 .logoProduit img {
-  width: 150px;               /* ajuste la taille du logo */
-  height: auto;               /* garde les proportions naturelles */
+  width: 150px;               
+  height: auto;               
 }
 
 
 .logoProduit img {
-  width: 270px;               /* ajuste la taille du logo */
-  height: auto;               /* garde les proportions naturelles */
+  width: 270px;               
+  height: auto;               
 }
 
 nav ul {
@@ -62,14 +61,13 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* Mise en page principale */
 main {
   display: flex;
   justify-content: space-around;
   align-items: center;
   text-align: center;
   height: 80vh;
-}
+} 
 
 .left h1 {
   font-size: 3rem;
@@ -91,9 +89,9 @@ p {
 }
 
 .center h2 {
-  font-size: 2rem;
+  font-size: 30px;
   font-weight: bold;
-  position: relative; top: -70px;
+  position: relative; top: -20px;
 }
 
 .placeholder {
@@ -111,7 +109,32 @@ p {
   color: #ffd87a;
 }
 
-/* Responsive (pour téléphones) */
+.buy-btn {
+  background-color: #f5c96b; 
+  color: #0b1b2a;            
+  border: none;
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 25px;       
+  cursor: pointer;
+  margin-bottom: 20px;       
+  transition: 0.3s ease;
+}
+
+.btn-group {
+  display: flex;
+  gap: 15px;      
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.buy-btn:hover {
+  background-color: #ffdf8a; 
+  transform: scale(1.05);    
+}
+
+
 @media (max-width: 900px) {
   main {
     flex-direction: column;
